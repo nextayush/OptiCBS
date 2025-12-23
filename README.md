@@ -54,7 +54,7 @@ Run the entire suite (Frontend + Backend) with a single command using Docker.
 ### Installation
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/nextayush/OptiCBS.git](https://github.com/nextayush/OptiCBS.git)
+    git clone https://github.com/nextayush/OptiCBS.git
     cd OptiCBS
     ```
 
