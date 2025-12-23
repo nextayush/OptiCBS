@@ -1,0 +1,35 @@
+# --- Global / OS ---
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+venv/
+
+# --- Python / Backend ---
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*.pyc
+backend/venv/
+backend/.venv/
+backend/env/
+backend/.env
+
+# Ignore Pytest cache
+backend/.pytest_cache/
+
+# --- Node / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/package-lock.json  # Optional: Keep this if you want to lock versions, ignore if you use yarn exclusively
+frontend/.eslintcache
+
+# --- Docker ---
+# Ignore local Docker data volumes if you ever map them locally
+docker-data/

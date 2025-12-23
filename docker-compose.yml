@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # Python Backend Service
+  backend:
+    build: ./backend
+    container_name: mapf_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app  # Hot-reloading: changes on host reflect in container
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # React Frontend Service
+  frontend:
+    build: ./frontend
+    container_name: mapf_frontend
+    ports:
+      - "3000:80"  # Access app at localhost:3000
+    depends_on:
+      - backend    # Wait for backend to start
